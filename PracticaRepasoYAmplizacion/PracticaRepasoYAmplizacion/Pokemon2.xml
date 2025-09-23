@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Pokedex InicioXML</comment>
+<entry key="pokemon3.tipo">Planta/Veneno</entry>
+<entry key="pokemon1.nombre">Pikachu</entry>
+<entry key="pokemon1.nivel">25</entry>
+<entry key="pokemon2.nivel">15</entry>
+<entry key="pokemon2.tipo">Fuego</entry>
+<entry key="pokemon4.nivel">10</entry>
+<entry key="pokemon4.nombre">Squirtle</entry>
+<entry key="pokemon3.nivel">5</entry>
+<entry key="pokemon3.nombre">Bulbasaur</entry>
+<entry key="pokemon4.tipo">Agua</entry>
+<entry key="pokemon2.nombre">Charmander</entry>
+<entry key="pokemon1.tipo">Eléctrico</entry>
+</properties>
