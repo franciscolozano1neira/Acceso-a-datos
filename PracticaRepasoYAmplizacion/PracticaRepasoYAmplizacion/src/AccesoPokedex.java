@@ -11,9 +11,9 @@ public class AccesoPokedex {
         ArrayList<Integer> numPokemon = new ArrayList<>(size);
 
         File f1 = new File(Pokedex);
-        // comprobar si existe
+        // Aquí comprobaremos si el documento existe o no, después de la comprobación podremos leerlo o, en su defecto, crearlo
         if (f1.exists()) {
-            // leer desde fichero
+            // si existe, pasaremos a leerlo
             try (DataInputStream dis = new DataInputStream(new FileInputStream(f1))){
                 for (int i = 0; i<size; i++){
                     numPokemon.add(dis.readInt());
@@ -22,7 +22,7 @@ public class AccesoPokedex {
                 System.err.println("Error leyendo: " + e.getMessage());
             }
         } else {
-            // crear con 20 ceros
+            // en caso de no exixtir, lo que haremos será crear uno con 20 ceros
             try (DataOutputStream dos = new DataOutputStream(new FileOutputStream(f1))) {
                 for (int i = 0; i < size; i++) {
                     dos.writeInt(0);
@@ -32,10 +32,10 @@ public class AccesoPokedex {
                 System.err.println("Error leyendo " + e.getMessage());
             }
         }
-        // acceso aleatorio
+        // Y ahora configuramos el acceso aleatorio
         try (RandomAccessFile raf = new RandomAccessFile(Pokedex, "rwd");
         Scanner sc = new Scanner(System.in)){
-            // estructura
+            // Estructuralmente
             while (true){
                 System.out.println("Contenido actual: ");
                 for (int i=0; i<numPokemon.size(); i++){
@@ -43,7 +43,7 @@ public class AccesoPokedex {
                 }
                 System.out.println();
 
-                // posición
+                // por posición
                 System.out.println("Introduce posicion a modificar (negativo para salir): ");
                 int pos = sc.nextInt();
                 if (pos < 0 || pos >= size){
@@ -55,7 +55,7 @@ public class AccesoPokedex {
                 System.out.println("Introduce nuevo valor: ");
                 int nuevoValor = sc.nextInt();
 
-                // actualizar
+                // actualización
                 numPokemon.set(pos, nuevoValor);
 
                 // actualizar solo esa posicion
