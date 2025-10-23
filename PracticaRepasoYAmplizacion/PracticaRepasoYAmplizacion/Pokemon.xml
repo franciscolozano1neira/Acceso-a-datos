@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Pokedex InicioXML</comment>
+<entry key="beedrill">bicho/veneno</entry>
+<entry key="butterfree">bicho/volador</entry>
+<entry key="blastoise">agua</entry>
+<entry key="pidgey">normal/volador</entry>
+<entry key="squirtle">agua</entry>
+<entry key="bulbasaur">planta/veneno</entry>
+<entry key="charmeleon">fuego</entry>
+<entry key="pidgeotto">normal/volador</entry>
+<entry key="weedle">bicho/veneno</entry>
+<entry key="kakuna">bicho/veneno</entry>
+<entry key="caterpie">bicho</entry>
+<entry key="metapod">bicho</entry>
+<entry key="wartortle">agua</entry>
+<entry key="pidgeot">normal/volador</entry>
+<entry key="raticate">normal</entry>
+<entry key="venusaur">planta/veneno</entry>
+<entry key="charizard">fuego/volador</entry>
+<entry key="rattata">normal</entry>
+<entry key="charmander">fuego</entry>
+<entry key="ivysaur">planta/veneno</entry>
+</properties>
